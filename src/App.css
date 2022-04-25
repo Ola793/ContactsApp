@@ -1,0 +1,116 @@
+.App {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    height: 100%;  
+}
+
+.contact-list {
+    width: 100%;
+    font-size: 18px;
+}
+
+.contact-item {
+    border: 1px solid black;
+    margin: 10px 0px;
+    padding: 5px 10px;
+    background-color: rgb(208, 211, 235);
+    display: flex;
+    flex-direction: row;
+}
+
+.firstName,.lastName,.tel {
+    display: inline;
+}
+
+.firstName,.lastName {
+    width: 15%;
+}
+
+.tel {
+    width: 30%;
+}
+
+.contact-list .tabhead {
+    border: 2px solid black;
+    width: 100%;
+    font-weight: 800;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    padding: 5px 10px;
+    position: sticky;
+    top: 0;
+}
+
+.update-delete {
+    margin-left: auto;
+    display: inline;
+}
+
+.delete,.update {
+    margin-right: 10px;
+    display: inline;
+}
+
+.add-button {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 20px 0;
+}
+
+.add-contact {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(135, 135, 238);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.add-contact:hover {
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+#create-form, input {
+    margin: auto;
+}
+
+form {
+    margin-top: 50%;
+}
+
+label, input {
+    display: block;
+    padding: 5px;
+    font-size: 20px;
+}
+
+label {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#cancel, #save-contact {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 40%;
+    background-color: rgb(179, 179, 240);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#cancel:hover, #save-contact:hover {
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+}
